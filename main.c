@@ -6,7 +6,7 @@
 /*   By: yhadari <yhadari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 18:06:43 by yhadari           #+#    #+#             */
-/*   Updated: 2020/12/21 13:24:34 by yhadari          ###   ########.fr       */
+/*   Updated: 2020/12/21 20:05:54 by yhadari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ char        *ft_strcpy(char * dst, const char * src);
 int         ft_strcmp(const char *s1, const char *s2);
 ssize_t     ft_write(int fildes, const void *buf, size_t nbyte);
 ssize_t     ft_read(int fildes, void *buf, size_t nbyte);
+char        *ft_strdup(const char *s1);
 
 int         main()
 {
@@ -52,13 +53,20 @@ printf ("-----------------------------------------\n");
     printf("|%zd|\n", write(1, buf, 20));
 
 printf ("-----------------------------------------\n");
-    char    f[100] = "fh7ya1234567890";
-    char    j[100] = "fh7ya1234567890";
+    char    p1[100] = "fh7ya1234567890";
+    char    p2[100] = "fh7ya1234567890";
 
-    int     fd = open("test1", O_RDWR);
-    int     fd1 = open("test2", O_RDWR);
-    printf("|%zd||%s|\n", ft_read(fd, f, 10), f);
-    printf("|%zd||%s|\n", read(fd1, j, 10), j);
+    int     fd = open("ft_strlen.s", O_RDWR);
+    int     fd1 = open("ft_strlen.s", O_RDWR);
+    printf("|%zd||%s|\n", ft_read(fd, p1, 10), p1);
+    printf("|%zd||%s|\n", read(fd1, p2, 10), p2);
+    
+printf ("-----------------------------------------\n");
+    char    s1[100] = "yhadafhhdio";
+
+    printf("|%p|\n", ft_strdup(s1));
+    printf("|%p|\n", strdup(s1));
+    printf("|%p|\n", s1);
     
     return (0);
 }
