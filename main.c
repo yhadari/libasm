@@ -6,7 +6,7 @@
 /*   By: yhadari <yhadari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 18:06:43 by yhadari           #+#    #+#             */
-/*   Updated: 2020/12/21 20:05:54 by yhadari          ###   ########.fr       */
+/*   Updated: 2020/12/22 13:05:23 by yhadari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,46 +27,47 @@ char        *ft_strdup(const char *s1);
 
 int         main()
 {
-    char    p[100] = "hello world!?";
+    char    p[100] = "hello world?";
 
     printf("|%zu|\n", ft_strlen(p));
     printf("|%zu|\n", strlen(p));
     
-printf ("-----------------------------------------\n");
-     char   ptr[100] = "hello world!";
-     char   str[100] = "papapapapapap";
+//printf ("-----------------------------------------\n");
+    //  char   ptr[100] = "u";
+    //  char   str[100] = "";
 
-     printf("|%s|\n", ft_strcpy(ptr, str));
-     printf("|%s|\n", strcpy(ptr, str));
+    //  printf("|%s|\n", ft_strcpy(ptr, str));
+    //  printf("|%s|\n", strcpy(ptr, str));
      
-printf ("-----------------------------------------\n");
-     char   ptr1[100] = "hadari";
-     char   str1[100] = "hadari";
+// printf ("-----------------------------------------\n");
+    //  char   ptr1[100] = "hadari";
+    //  char   str1[100] = "hadarie";
 
-     printf("|%d|\n", ft_strcmp(ptr1, str1));
-     printf("|%d|\n", strcmp(ptr1, str1));
+    //  printf("|%d|\n", ft_strcmp(ptr1, str1));
+    //  printf("|%d|\n", strcmp(ptr1, str1));
     
-printf ("-----------------------------------------\n");
-    char    buf[100] = "libasm";
+// printf ("-----------------------------------------\n");
+    // char    buf[100] = "yhadari";
+    // int     nb = 10;
     
-    printf("|%zd|\n", ft_write(1, buf, 20));
-    printf("|%zd|\n", write(1, buf, 20));
+    // printf("|%zd|\n", ft_write(1, buf, nb));
+    // printf("|%zd|\n", write(1, buf, nb));
 
-printf ("-----------------------------------------\n");
-    char    p1[100] = "fh7ya1234567890";
-    char    p2[100] = "fh7ya1234567890";
+// printf ("-----------------------------------------\n");
+    // char    p1[100] = "12345678910";
+    // char    p2[100] = "12345678910";
 
-    int     fd = open("ft_strlen.s", O_RDWR);
-    int     fd1 = open("ft_strlen.s", O_RDWR);
-    printf("|%zd||%s|\n", ft_read(fd, p1, 10), p1);
-    printf("|%zd||%s|\n", read(fd1, p2, 10), p2);
+    //  int     fd = open("ft_strlen.s", O_RDWR);
+    //  int     fd1 = open("ft_strlen.s", O_RDWR);
+    // printf("|%zd||%s|\n", ft_read(fd, p1, 9), p1);
+    // printf("|%zd||%s|\n", read(fd1, p2, 9), p2);
     
-printf ("-----------------------------------------\n");
-    char    s1[100] = "yhadafhhdio";
+// printf ("-----------------------------------------\n");
+    // char    s1[100] = "hello world?";
 
-    printf("|%p|\n", ft_strdup(s1));
-    printf("|%p|\n", strdup(s1));
-    printf("|%p|\n", s1);
+    // printf("|%s|\n", ft_strdup(s1));
+    // printf("|%s|\n", strdup(s1));
+    // printf("|%s|\n", s1);
     
     return (0);
 }
