@@ -3,6 +3,7 @@ global      _ft_strdup
 section     .text
 
 extern  _ft_strlen
+extern  _ft_strcpy
 extern  _malloc
 _ft_strdup:
             push    rdi
@@ -12,11 +13,5 @@ _ft_strdup:
             call    _malloc
             pop     rsi
             mov     rdi, rax
-_loop:
-            mov     dl, [rsi]
-            mov     [rdi], dl
-            inc     rdi
-            inc     rsi
-            cmp     dl, 0
-            jne     _loop
+            call    _ft_strcpy
             ret
